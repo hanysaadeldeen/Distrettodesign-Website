@@ -208,11 +208,11 @@ ul li {
 }
 
 ul li:hover {
-    color: #A86514;
+    color: #A36316;
 }
 
 ul li.active {
-    color: #A86514;
+    color: #A36316;
 }
 
 .sideBar {
@@ -222,7 +222,7 @@ ul li.active {
 }
 
 .sideBar nav ul li:hover {
-    color: #A86514;
+    color: #A36316;
 }
 
 .sidebar-en-enter-active,

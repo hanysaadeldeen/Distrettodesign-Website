@@ -26,7 +26,7 @@
 
 <style scoped>
 .imgCta {
-    background-image: url("../../assets/img/home/cta/cta.jpg");
+    background-image: url("../../assets/img/home/cta/cta.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

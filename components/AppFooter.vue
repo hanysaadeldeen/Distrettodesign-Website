@@ -44,7 +44,7 @@
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M14.1761 0.242676H16.9362L10.9061 7.02008L18 16.2427H12.4456L8.0951 10.6493L3.11723 16.2427H0.35544L6.80517 8.99348L0 0.242676H5.69545L9.6279 5.3553L14.1761 0.242676ZM13.2073 14.6181H14.7368L4.86441 1.78196H3.2232L13.2073 14.6181Z"
-                                            fill="#A86514" />
+                                            fill="#A36316" />
                                     </svg>
                                 </div>
                             </div>
@@ -89,8 +89,8 @@
 }
 
 .gradient-button:hover {
-    border: 2px solid #A86514;
-    background-color: #A86514;
+    border: 2px solid #A36316;
+    background-color: #A36316;
 }
 
 @media (max-width:768px) {

@@ -9,8 +9,9 @@
                     <div class="absolute w-6 h-8 md:h-12 top-[42%] -translate-y-1/2 right-0 md:-right-14 bg-white  ">
                     </div>
                     <div class="max-md:pt-8 max-md:pr-8 pt-[53px] ">
-                        <img src="~/assets/img/home/introduction/Introduction.jpg" alt="Introduction"
-                            class=" w-full h-[300px] md:max-w-[477px] xl:max-w-[577px]  md:h-[331px] xl:h-[431px] object-cover rounded-l-[60px] lg:rounded-l-[80px] border-white border-[3px]">
+                        <img src="~/assets/img/home/introduction/Introduction.webp" alt="Introduction" loading="lazy"
+                            class=" w-full h-[300px] md:max-w-[477px] xl:max-w-[577px]  md:h-[331px] xl:h-[431px] object-cover rounded-l-[60px] lg:rounded-l-[80px] border-white border-[3px]"
+                            width="577px" height="431px" />
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 xl:max-w-[784px] ml-5 xl:ml-9 max-md:text-center">
