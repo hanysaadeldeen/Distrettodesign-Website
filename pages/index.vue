@@ -1,6 +1,7 @@
 <template>
   <main>
     <IntroductionSection />
+    <LatestDropSection />
     <FeaturedProjectsSection />
     <ProductsSection />
     <ClientSection />
