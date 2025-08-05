@@ -48,7 +48,8 @@
                     </div>
                     <div class="md:hidden text-2xl cursor-pointer sm:text-3xl">
                         <i class="fa-solid fa-bars-staggered " :class="{ hidden: isSideBar }" @click="toggleSidebar" />
-                        <i class="fa-solid fa-xmark " :class="{ hidden: !isSideBar }" @click="toggleSidebar" />
+                        <i class="fa-solid fa-xmark text-white" :class="{ hidden: !isSideBar }"
+                            @click="toggleSidebar" />
                     </div>
 
                 </div>
@@ -216,7 +217,7 @@ ul li.active {
 
 .sideBar {
     background: linear-gradient(to right, #0a0911, #0a0911f5);
-    opacity: 0.5;
+    opacity: 0.8;
     will-change: transform;
 }
 

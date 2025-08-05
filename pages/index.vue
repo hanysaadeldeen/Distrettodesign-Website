@@ -1,7 +1,11 @@
 <template>
   <main>
     <IntroductionSection />
+    <FeaturedProjectsSection />
+    <ProductsSection />
     <ClientSection />
+    <CTASection />
+
   </main>
 </template>
 

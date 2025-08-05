@@ -1,10 +1,8 @@
 <template>
     <section class="Clients mx-auto max-w-[1520px] max-md:px-5">
         <div class="container mx-auto">
-            <h1
-                class="mb-10 md:mb-14 text-3xl md:text-4xl lg:text-6xl font-medium text-center lg:max-w-[1016px] mx-auto">
-                Includes group of Europe’s most established furniture brands.
-            </h1>
+            <SectionTitle title="Includes group of Europe’s most established furniture brands."
+                class="text-center lg:max-w-[1016px] mx-auto mb-10 md:mb-14 capitalize lg:!leading-[74px]" />
             <div class="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 items-stretch">
                 <div v-for="client in Clients"
                     class="group flex justify-center items-center rounded-l-3xl md:rounded-l-[40px] bg-SectionBG2  h-[128px] md:h-[228px] p-6"
