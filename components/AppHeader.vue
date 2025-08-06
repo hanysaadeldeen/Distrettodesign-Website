@@ -46,7 +46,7 @@
                             </button>
                         </nuxt-link>
                     </div>
-                    <div class="md:hidden text-2xl cursor-pointer sm:text-3xl">
+                    <div class="lg:hidden text-2xl cursor-pointer sm:text-3xl">
                         <i class="fa-solid fa-bars-staggered " :class="{ hidden: isSideBar }" @click="toggleSidebar" />
                         <i class="fa-solid fa-xmark text-white" :class="{ hidden: !isSideBar }"
                             @click="toggleSidebar" />

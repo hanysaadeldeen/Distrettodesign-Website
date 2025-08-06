@@ -6,7 +6,7 @@
                     <div
                         class="w-[90%] md:w-[100%] h-[90%]  md:h-[331px] xl:h-[446px] absolute top-0 right-0 md:-right-14  border-primary rounded-l-[60px] lg:rounded-l-[80px] border-[16px] md:border-[24px] -z-10">
                     </div>
-                    <div class="absolute w-6 h-8 md:h-12 top-[42%] -translate-y-1/2 right-0 md:-right-14 bg-white  ">
+                    <div class="absolute w-6 h-8 md:h-12 top-[42%] -translate-y-1/2 right-0 md:-right-14 bg-red-500  ">
                     </div>
                     <div class="max-md:pt-8 max-md:pr-8 pt-[53px] ">
                         <img src="~/assets/img/home/introduction/Introduction.webp" alt="Introduction" loading="lazy"

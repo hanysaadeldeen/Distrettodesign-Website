@@ -1,10 +1,11 @@
 <template>
   <main>
     <IntroductionSection />
-    <LatestDropSection />
     <FeaturedProjectsSection />
-    <ProductsSection />
     <ClientSection />
+    <WhatWeDoSection />
+    <ProductsSection />
+    <LatestDropSection />
     <CTASection />
 
   </main>
