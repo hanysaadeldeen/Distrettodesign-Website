@@ -23,7 +23,7 @@
                     </div>
                     <div class="max-md:pt-8 max-md:pr-8 pt-[53px] md:pr-14">
                         <img src="~/assets/img/about/whyUs/whyUs.png" alt="Introduction" loading="lazy"
-                            class=" w-full h-[300px] md:max-w-[477px] xl:max-w-[577px]  md:h-[331px] xl:h-[431px] object-cover rounded-l-[60px] lg:rounded-l-[80px] border-white border-[3px]"
+                            class=" w-full h-[300px] md:max-w-[477px] xl:w-[577px]  md:h-[331px] xl:h-[431px] object-cover rounded-l-[60px] lg:rounded-l-[80px] border-white border-[3px]"
                             width="577px" height="431px" />
                     </div>
                 </div>

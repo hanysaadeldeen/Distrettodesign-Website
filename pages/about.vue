@@ -5,6 +5,10 @@
             WE?</h1>
         <AboutUsSection />
         <VisionMissionSection />
+        <ValuesSection />
+        <NumbersSection />
+        <ClientSection />
+
     </main>
 </template>
 
