@@ -56,8 +56,14 @@
                     <div
                         class="max-lg:pb-8 pt-8 flex max-lg:flex-col max-lg:justify-center gap-2 justify-between items-center text-white text-sm ">
                         <div class="flex gap-6 items-center *:underline *:cursor-pointer ">
-                            <p>Privacy Policy</p>
-                            <p>Terms of Service</p>
+                            <nuxt-link to="privacy">
+
+                                <p>Privacy Policy</p>
+                            </nuxt-link>
+                            <nuxt-link to="terms">
+
+                                <p>Terms of Service</p>
+                            </nuxt-link>
                         </div>
                         <p class="text-center">© 2025 Distretto Design. All rights reserved. Made by
                             <a href="https://do.com.sa/" class=" font-bold text-lg mx-1 underline"
