@@ -1,78 +1,78 @@
 <template>
-    <div class="form bg-SectionBG rounded-[60px] p-[60px] flex gap-10">
-        <Form @submit="onSubmit" v-slot="{ errors }" :validation-schema="schema"
-            class="w-full lg:max-w-[672px] mx-auto pb-10  md:pb-20 max-lg:px-8 ">
+    <section class="form bg-SectionBG rounded-[60px] p-6 md:p-10 lg:p-[60px] flex gap-10 max-lg:flex-col  ">
+        <div class="flex-1 lg:min-w-[400px] relative">
 
-            <div class="flex flex-col w-full lg:max-w-[320px]">
-                <label for="FullName">
-                    {{ locale === "ar" ? "الإسم الكامل" : " Full Name" }}
-                </label>
-                <Field id="FullName" name="FullName" type="text" :placeholder="locale === 'en'
-                    ? 'Enter your full name'
-                    : 'أدخل اسمك الكامل'
-                    " class="Field" :class="{ 'border-red-500': errors.FullName }" />
-                <span class="text-red-500 text-sm">{{
-                    errors.FullName
-                    }}</span>
-            </div>
+            <h1 class="text-2xl md:text-3xl lg:text-5xl font-medium mb-6 md:mb-10 max-lg:text-center">Don’t hesitate to
+                reach out </h1>
 
-            <div class="flex flex-col w-full lg:max-w-[320px]">
-                <label for="phoneNumber">
-                    {{ locale === "ar" ? "رقم الهاتف" : "Phone" }}
-                </label>
-                <Field id="phoneNumber" name="phoneNumber" type="text" :placeholder="locale === 'en'
-                    ? 'Enter your phone number'
-                    : '+966 5X XXX XXXX'
-                    " class="Field" :class="{ 'border-red-500': errors.phoneNumber }" />
-                <span class="text-red-500 text-sm">{{
-                    errors.phoneNumber
-                    }}</span>
-            </div>
+            <Form @submit="onSubmit" v-slot="{ errors }" :validation-schema="schema" class="w-full flex-grow relative">
 
+                <div class="flex flex-col w-full  mb-6 lg:mb-8">
+                    <label for="FullName">
+                        {{ locale === "ar" ? "الإسم الكامل" : " Full Name" }}
+                    </label>
+                    <Field id="FullName" name="FullName" type="text" :placeholder="locale === 'en'
+                        ? 'Enter your full name'
+                        : 'أدخل اسمك الكامل'
+                        " class="Field" :class="{ 'border-red-500': errors.FullName }" />
+                    <span class="text-red-500 text-sm">{{
+                        errors.FullName
+                        }}</span>
+                </div>
 
+                <div class="flex flex-col w-full mb-6 lg:mb-8">
+                    <label for="phoneNumber">
+                        {{ locale === "ar" ? "رقم الهاتف" : "Phone" }}
+                    </label>
+                    <Field id="phoneNumber" name="phoneNumber" type="text" :placeholder="locale === 'en'
+                        ? 'Enter your phone number'
+                        : '+966 5X XXX XXXX'
+                        " class="Field" :class="{ 'border-red-500': errors.phoneNumber }" />
+                    <span class="text-red-500 text-sm">{{
+                        errors.phoneNumber
+                        }}</span>
+                </div>
 
+                <div class="flex flex-col w-full mb-6 lg:mb-8 ">
+                    <label for="email">
+                        {{
+                            locale === "ar" ? "عنوان البريد الإلكتروني" : "Email"
+                        }}
+                    </label>
+                    <Field id="email" name="email" type="email" :placeholder="locale === 'en'
+                        ? 'Enter your email address'
+                        : 'example@company.com'
+                        " class="Field " :class="{ 'border-red-500': errors.email }" />
+                    <span class="text-red-500 text-sm">{{ errors.email }}</span>
+                </div>
 
+                <div class="flex flex-col w-full ">
+                    <label for="message">
+                        {{ locale === "ar" ? "رسالتك / تفاصيل الحالة" : "Message" }}
+                    </label>
+                    <Field id="message" name="message" as="textarea" :placeholder="locale === 'en'
+                        ? 'Write your message here'
+                        : 'اشرح باختصار ما ترغب باستشارته'
+                        "
+                        class="text-black p-4 rounded-2xl w-full h-32 md:h-[144px] border  resize-none focus:outline-none focus:ring-2 focus:ring-primary-main"
+                        :class="{ 'border-red-500': errors.message }" />
+                    <span class="text-red-500 text-sm">{{ errors.message }}</span>
+                </div>
 
-            <div class="flex flex-col w-full lg:max-w-[320px]">
-                <label for="email">
-                    {{
-                        locale === "ar" ? "عنوان البريد الإلكتروني" : "Email"
-                    }}
-                </label>
-                <Field id="email" name="email" type="email" :placeholder="locale === 'en'
-                    ? 'Enter your email address'
-                    : 'example@company.com'
-                    " class="Field " :class="{ 'border-red-500': errors.email }" />
-                <span class="text-red-500 text-sm">{{ errors.email }}</span>
-            </div>
+                <h1 class="text-xl lg:text-2xl font-normal mt-6 lg:mt-8">By sending inquiry, you agree to
+                    our <nuxt-link to="privacy" class="underline"> Privacy Policy.</nuxt-link></h1>
+                <div class="sm:w-fit sm:mr-auto">
+                    <button type="submit" :disabled="isLoading" class="gradient-buttonTwo mt-4 lg:mt-10  w-full ">
+                        Send Message
+                    </button>
+                </div>
 
-
-
-
-            <div class="flex flex-col w-full lg:max-w-[672px]">
-                <label for="message">
-                    {{ locale === "ar" ? "رسالتك / تفاصيل الحالة" : "Message" }}
-                </label>
-                <Field id="message" name="message" as="textarea" :placeholder="locale === 'en'
-                    ? 'Write your message here'
-                    : 'اشرح باختصار ما ترغب باستشارته'
-                    "
-                    class="text-black p-4 rounded-2xl w-full h-32 md:h-[144px] border  resize-none focus:outline-none focus:ring-2 focus:ring-primary-main"
-                    :class="{ 'border-red-500': errors.message }" />
-                <span class="text-red-500 text-sm">{{ errors.message }}</span>
-            </div>
-
-            <div class="w-fit mr-auto">
-                <button type="submit" :disabled="isLoading"
-                    class="gradient-buttonTwo mt-4 md:mt-10 md:w-[240px] mx-auto  ">
-                    Send Message
-                </button>
-            </div>
-        </Form>
-
-        <img src="~/assets/img/contact/maps.png" alt="maps.png">
-
-    </div>
+            </Form>
+        </div>
+        <div class="flex flex-col rounded-[40px]  max-w-[604px] relative">
+            <img src="~/assets/img/contact/maps.png" class="w-full rounded-[40px] h-full object-cover" alt="maps.png">
+        </div>
+    </section>
 </template>
 
 <script setup lang="ts">
@@ -116,17 +116,7 @@ const schema = yup.object({
             locale.value === "en" ? "Phone number is required" : "رقم الهاتف مطلوب"
         ),
 
-    Company: yup
-        .string()
-        .min(
-            2,
-            locale.value === "en"
-                ? "First name must be at least 2 characters"
-                : "يجب أن يكون اسم الجهة على الأقل حرفين"
-        )
-        .required(
-            locale.value === "en" ? "First name is required" : "اسم الجهة أو الشركة"
-        ),
+
     message: yup
         .string()
         .min(
@@ -158,7 +148,7 @@ const onSubmit = async (values: any) => {
 
 <style scoped>
 .Field {
-    @apply text-black py-2 md:py-3 px-2.5 md:px-4 h-[48px] w-full border rounded-2xl focus:outline-none focus:ring-2 focus:bg-white
+    @apply text-black py-2 md:py-3 px-2.5 md:px-4 h-[48px] w-full border rounded-2xl border-[#8A8A8A] focus:outline-none focus:ring-2 focus:bg-white
 }
 
 

@@ -6,7 +6,6 @@
       <div class="relative container max-sm:px-4 mx-auto px-2">
 
         <div class="terms-page flex" :key="locale">
-
           <main class="content lg:mr-32 lg:p-4 flex-1">
             <div class="flex flex-col ">
               <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[80px] lg:!leading-[80px] font-semibold mb-4">Privacy
