@@ -15,7 +15,7 @@
                     </div>
                     <div
                         class="rounded-full border  border-black p-2 flex justify-center items-center size-12 cursor-pointer group ">
-                        <img src="~/assets/img/projects/ProjectDetails/social/facebook.svg"
+                        <img src="~/assets/img/projects/ProjectDetails/social/faceBook.svg"
                             class="group-hover:scale-110 transition-all duration-300 ease-in-out" alt="share.svg">
                     </div>
                     <div
