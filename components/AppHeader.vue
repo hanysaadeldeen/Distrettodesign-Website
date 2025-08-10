@@ -196,12 +196,12 @@ ul li {
     cursor: pointer;
     transition: color 0.3s ease;
     will-change: color;
+    line-height: 33.6px;
 }
 
 ul li a,
 ul li {
     display: inline-block;
-    height: 37px;
     display: flex;
     justify-content: center;
     align-items: center;

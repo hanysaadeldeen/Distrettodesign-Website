@@ -19,10 +19,28 @@
                             <nav>
                                 <ul
                                     class="flex flex-wrap max-lg:justify-center max-lg:items-center gap-6 text-xl font-medium *:text-white *:cursor-pointer hover:*:text-primary">
-                                    <li>Work</li>
-                                    <li>About </li>
-                                    <li>Careers</li>
-                                    <li>Contact Us</li>
+                                    <li :class="adjustedPath === '/projects' ? 'active' : ''">
+                                        <nuxt-link :to="localePath('projects')">
+                                            Projects
+                                        </nuxt-link>
+                                    </li>
+                                    <li :class="adjustedPath === '/about' ? 'active' : ''">
+                                        <nuxt-link :to="localePath('about')">
+                                            About
+                                        </nuxt-link>
+                                    </li>
+
+                                    <li :class="adjustedPath === '/careers' ? 'active' : ''">
+                                        <nuxt-link :to="localePath('careers')">
+                                            Careers
+                                        </nuxt-link>
+                                    </li>
+                                    <li :class="adjustedPath === '/contact' ? 'active' : ''">
+                                        <nuxt-link :to="localePath('contact')">
+                                            Contact Us
+                                        </nuxt-link>
+                                    </li>
+
                                 </ul>
                             </nav>
                         </div>
@@ -55,16 +73,23 @@
                     </div>
                     <div
                         class="max-lg:pb-8 pt-8 flex max-lg:flex-col max-lg:justify-center gap-2 justify-between items-center text-white text-sm ">
-                        <div class="flex gap-6 items-center *:underline *:cursor-pointer ">
-                            <nuxt-link to="privacy">
 
-                                <p>Privacy Policy</p>
-                            </nuxt-link>
-                            <nuxt-link to="terms">
+                        <ul class="flex gap-6 items-center *:underline *:cursor-pointer ">
 
-                                <p>Terms of Service</p>
-                            </nuxt-link>
-                        </div>
+
+                            <li :class="adjustedPath === '/privacy' ? 'active' : ''">
+                                <nuxt-link :to="localePath('privacy')">
+                                    Privacy Policy
+                                </nuxt-link>
+                            </li>
+                            <li :class="adjustedPath === '/terms' ? 'active' : ''">
+                                <nuxt-link :to="localePath('terms')">
+                                    Terms of Service
+                                </nuxt-link>
+                            </li>
+
+                        </ul>
+
                         <p class="text-center">© 2025 Distretto Design. All rights reserved. Made by
                             <a href="https://do.com.sa/" class=" font-bold text-lg mx-1 underline"
                                 target="_blank">DO</a>.
@@ -77,7 +102,20 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
+const route = useRoute()
 
+const getPathWithoutLocale = (path: string) => {
+    const segments = path.split("/");
+    if (segments[1] && segments[1].length === 2) {
+        return `/${segments.slice(2).join("/")}`;
+    }
+    return path;
+};
+
+
+
+const adjustedPath = computed(() => getPathWithoutLocale(route.path));
 </script>
 
 <style scoped>
@@ -109,5 +147,9 @@
 
 .visability {
     visibility: hidden;
+}
+
+ul li.active {
+    color: #A36316;
 }
 </style>

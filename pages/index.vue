@@ -1,5 +1,6 @@
 <template>
   <main>
+    <HeroSection />
     <IntroductionSection />
     <FeaturedProjectsSection />
     <ClientSection />

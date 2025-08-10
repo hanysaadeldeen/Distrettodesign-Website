@@ -5,14 +5,14 @@
         <SectionTitle title="WHAT WE DO" class=" uppercase" />
       </div>
 
-      <div class="shadow-xl rounded-l-[100px] flex bg-white">
+      <div class="shadow-xl md:rounded-l-[100px] flex max-md:flex-col bg-white">
 
-        <div class="w-1/2">
+        <div class="w-full md:w-1/2">
           <img src="~/assets/img/home/whatWeDo/whatWeDo.png" alt="whatWeDo"
-            class="object-cover w-full h-full rounded-l-[100px]">
+            class="object-cover w-full h-full  md:rounded-l-[100px]">
         </div>
 
-        <div class="p-11 flex flex-col justify-between items-start w-1/2 gap-[100px]">
+        <div class="p-11 flex flex-col justify-between items-start w-full md:w-1/2 gap-16 md:gap-[100px]">
           <h1 class="font-medium text-primary text-2xl sm:text-3xl md:text-4xl lg:text-6xl">1.</h1>
           <div>
             <p class="font-normal text-xl md:text-2xl lg:text-3xl mb-2">INTERIOR DESIGN</p>

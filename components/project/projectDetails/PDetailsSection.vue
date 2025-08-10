@@ -67,8 +67,6 @@
           </div>
         </div>
       </div>
-
-
       <button class="gradient-button mt-16 ">
         Load More
       </button>
