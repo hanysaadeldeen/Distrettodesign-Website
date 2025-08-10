@@ -8,7 +8,7 @@
                 </div>
                 <div
                     class=" bg-primary rounded-l-[60px]  lg:rounded-l-[100px]  pl-8 py-8 sm:pl-14 sm:py-14  md:py-20 xl:py-32  xl:pl-[132px] relative">
-                    <div class="relative z-20 text-white w-full md:max-w-[922px]">
+                    <div class="relative  text-white w-full md:max-w-[922px]">
                         <SectionTitle title="WHY WORK WITH US?" class=" uppercase mb-4 md:mb-6 lg:!leading-[73px] " />
                     </div>
                     <div class="mt-6 lg:mt-10 xl:mt-40">

@@ -13,6 +13,7 @@
       </div>
     </div>
     <WorkWithUs />
+    <OpenPositions />
     <CareerCTA />
   </main>
 
