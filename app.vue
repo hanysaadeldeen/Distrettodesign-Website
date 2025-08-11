@@ -22,6 +22,16 @@ onMounted(() => {
   setDirection();
 });
 watch(locale, setDirection, { immediate: true });
+import Lenis from '@studio-freight/lenis'
+
+onMounted(() => {
+  const lenis = new Lenis()
+  function raf(time: any) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  requestAnimationFrame(raf)
+})
 </script>
 
 <style scoped>
