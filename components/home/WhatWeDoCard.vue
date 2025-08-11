@@ -46,7 +46,7 @@ onMounted(() => {
 
 <template>
 
-    <div ref="container" class="h-screen  sticky top-[50px] xl:top-[100px] ">
+    <div ref="WhatWeDoCard container" class="h-screen  sticky top-[50px] xl:top-[100px] ">
         <h1 :class="i === 0 ? 'visible' : 'hide'"
             class="uppercase text-2xl sm:text-3xl md:text-4xl pb-[56px] lg:text-6xl font-medium">
             WHAT WE DO
