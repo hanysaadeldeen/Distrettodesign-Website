@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="ourRoles" id="ourRoles">
         <div class="container mx-auto max-w-[1410px] max-xl:px-5">
             <div class=" mb-8 md:mb-14">
                 <SectionTitle title="OUR ROLES" class="uppercase" />

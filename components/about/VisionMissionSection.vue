@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <div class="pl-5">
+    <section class="overflow-hidden">
+        <div ref="visionBox" class="pl-5 vision-box">
             <div
                 class="max-w-[1000px] ml-auto bg-SectionBG2 rounded-l-[80px] py-7 lg:py-14 px-10 lg:px-20 gap-5 lg:gap-10 flex items-center justify-between max-md:flex-col">
                 <div class="flex flex-col gap-6 items-center flex-grow min-w-[253px]">
@@ -15,7 +15,7 @@
                     valuable relationships with our clients, suppliers and dream team members. </p>
             </div>
         </div>
-        <div class="pr-5">
+        <div ref="missionBox" class="pr-5 mission-box">
             <div
                 class="w-full max-w-[1247px] mr-auto bg-SectionBG2 rounded-r-[80px] py-7 lg:py-14 px-10 lg:px-20 gap-5 lg:gap-10 flex items-center justify-between mt-[100px] max-md:flex-col-reverse">
                 <p class="text-xl md:text-2xl font-normal max-md:text-center">At Distretto Design, our mission is to
@@ -36,6 +36,39 @@
 </template>
 
 <script setup lang="ts">
+import { gsap } from 'gsap'
+
+import ScrollTrigger from "gsap/ScrollTrigger";
+const visionBox = ref<HTMLElement | null>(null);
+const missionBox = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.from(visionBox.value, {
+        scrollTrigger: {
+            trigger: ".vision-box",
+            start: "top 80%",
+            markers: false,
+            once: true
+        },
+        x: 200,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    });
+    gsap.from(missionBox.value, {
+        scrollTrigger: {
+            trigger: ".mission-box",
+            start: "top 80%",
+            markers: false,
+            once: true
+        },
+        x: -200,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    });
+});
 
 </script>
 

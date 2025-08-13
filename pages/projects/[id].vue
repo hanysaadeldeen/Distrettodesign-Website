@@ -60,8 +60,6 @@
                 </div>
             </div>
 
-
-
             <!-- المحتوى الرئيسي -->
             <div class="overflow-hidden">
                 <ProjectDHero />

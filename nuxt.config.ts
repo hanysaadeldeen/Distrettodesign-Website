@@ -37,11 +37,12 @@ export default defineNuxtConfig({
           href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
         },
       ],
-      title: "distrettodesign",
+      title: "Distretto Design",
       meta: [
         {
           name: "description",
-          content: "distrettodesign",
+          content:
+            "Distretto Design creates stylish interiors and offers luxury furniture from top European brands. Since 2015, we have been designing unique spaces with elegance and creativity.",
         },
       ],
     },

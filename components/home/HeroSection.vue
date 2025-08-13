@@ -13,7 +13,7 @@
                 </div>
                 <nuxt-link :to="localePath('projects')">
                     <div
-                        class=" relative  bg-primary   cursor-pointer rounded-l-[24px] md:rounded-l-[36px] lg:rounded-l-[50px] w-fit py-6 px-16 lg:py-9 lg:px-40">
+                        class=" relative  bg-primary hover:bg-black transition-all duration-300 ease-in-out cursor-pointer rounded-l-[24px] md:rounded-l-[36px] lg:rounded-l-[50px] w-fit py-6 px-16 lg:py-9 lg:px-40">
                         <div>
                             <img src="~/assets/img/home/heroSection/homeArrow.svg"
                                 class="animate-translateXLoop max-md:size-14 md:size-20 lg:size-28" alt="homeArrow">

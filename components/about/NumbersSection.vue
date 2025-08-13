@@ -9,37 +9,89 @@
         </div>
         <div class="flex gap-10 justify-between max-md:justify-center  flex-grow max-xl:w-full flex-wrap
         ">
-          <div class="space-y-4">
-            <h1 class=" number ">40+</h1>
-            <p class="numberTitle ">projects </p>
-          </div>
-          <div class="space-y-4">
-            <h1 class=" number ">30+</h1>
-            <p class="numberTitle ">Employees </p>
-          </div>
-          <div class="space-y-4">
-            <h1 class=" number ">20+</h1>
-            <p class="numberTitle ">Partner </p>
-          </div>
-          <div class="space-y-4">
-            <h1 class="number">100+</h1>
-            <p class="numberTitle ">Products </p>
+          <div v-for="(stat, index) in stats" :key="index" ref="counterElements">
+            <div class="space-y-4">
+              <h1 class=" number ">{{ stat.value }}+</h1>
+              <p class="numberTitle ">{{ stat.text }}</p>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
-
   </section>
 </template>
 
 <script setup lang="ts">
 
+const stats = reactive([
+  {
+    text: "Projects",
+    value: 0,
+    targetValue: 40
+  },
+  {
+    text: "Employees",
+    value: 0,
+    targetValue: 30
+
+  },
+  {
+    text: "Partner",
+    value: 0,
+    targetValue: 20
+
+  },
+  {
+    text: "Products",
+    value: 0,
+    targetValue: 100
+  },
+]);
+const counterElements = ref([]);
+
+const interval = 1000;
+
+const updateCounter = (stat: any) => {
+  let startValue = 0;
+  const endValue = stat.targetValue;
+  const duration = Math.floor(interval / endValue);
+  const counter = setInterval(() => {
+    startValue += 1;
+    stat.value = startValue;
+    if (startValue === endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+};
+
+const startCounters = () => {
+  stats.forEach(updateCounter);
+};
+
+onMounted(() => {
+  const options = {
+    root: null,
+    threshold: 0.5,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        startCounters();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  counterElements.value.forEach((element) => {
+    observer.observe(element);
+  });
+});
 </script>
 
 <style scoped>
 .number {
-  @apply text-5xl lg:text-6xl xl:text-[80px] font-semibold text-primary text-center
+  @apply text-5xl lg:text-6xl xl:text-7xl font-semibold text-primary text-center
 }
 
 .numberTitle {

@@ -1,52 +1,6 @@
-<script setup>
-import { ref, onMounted } from 'vue'
-import { gsap } from 'gsap'
-
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger)
-const props = defineProps({
-    i: Number,
-    number: String,
-    title: String,
-    description: String,
-    src: String,
-    targetScale: Number
-})
-
-const container = ref(null)
-const image = ref(null)
-
-onMounted(() => {
-    gsap.fromTo(
-        image.value,
-        { scale: 2 },
-        {
-            scale: 1,
-            scrollTrigger: {
-                trigger: container.value,
-                start: 'top bottom',
-                end: 'top top',
-                scrub: true
-            }
-        }
-    )
-
-    gsap.to(container.value, {
-        // scale: props.targetScale,
-        scrollTrigger: {
-            trigger: container.value,
-            start: 'top bottom',
-            end: 'top top',
-            scrub: true
-        }
-    })
-})
-</script>
-
 <template>
 
-    <div ref="WhatWeDoCard container" class="h-screen  sticky top-[50px] xl:top-[100px] ">
+    <div ref="container" class="WhatWeDoCard  h-screen  sticky top-[50px] xl:top-[100px] ">
         <h1 :class="i === 0 ? 'visible' : 'hide'"
             class="uppercase text-2xl sm:text-3xl md:text-4xl pb-[56px] lg:text-6xl font-medium">
             WHAT WE DO
@@ -71,6 +25,52 @@ onMounted(() => {
 
 
 </template>
+
+<script setup>
+import { gsap } from 'gsap'
+
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger)
+const props = defineProps({
+    i: Number,
+    number: String,
+    title: String,
+    description: String,
+    src: String,
+    targetScale: Number
+})
+
+// const container = ref(null)
+// const image = ref(null)
+
+// onMounted(() => {
+//     gsap.fromTo(
+//         image.value,
+//         { scale: 2 },
+//         {
+//             scale: 1,
+//             scrollTrigger: {
+//                 trigger: container.value,
+//                 start: 'top bottom',
+//                 end: 'top top',
+//                 scrub: true
+//             }
+//         }
+//     )
+
+//     gsap.to(container.value, {
+//         // scale: props.targetScale,
+//         scrollTrigger: {
+//             trigger: container.value,
+//             start: 'top bottom',
+//             end: 'top top',
+//             scrub: true
+//         }
+//     })
+// })
+</script>
+
 
 
 <style scoped>

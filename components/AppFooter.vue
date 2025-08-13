@@ -3,12 +3,17 @@
         <section class="relative mx-auto max-w-[1520px]">
             <div class="container mx-auto max-xl:px-5 relative">
                 <div class="absolute -top-6 right-0 hidden lg:block">
-                    <img src="~/assets/img/Utils/footer.svg" alt="footer">
+                    <nuxt-link :to="localePath('index')" class="cursor-pointer">
+                        <img src="~/assets/img/Utils/footer.svg" alt="footer">
+                    </nuxt-link>
                 </div>
                 <div class=" lg:py-20">
                     <div class=" lg:hidden flex justify-center  ">
-                        <img src="~/assets/img/Utils/footer.svg" alt="footer" class="visability" loading="lazy">
-                        <img src="~/assets/img/Utils/footer.svg" alt="footer" class="absolute -top-6" loading="lazy">
+                        <nuxt-link :to="localePath('index')" class="cursor-pointer">
+                            <img src="~/assets/img/Utils/footer.svg" alt="footer" class="visability" loading="lazy">
+                            <img src="~/assets/img/Utils/footer.svg" alt="footer" class="absolute -top-6"
+                                loading="lazy">
+                        </nuxt-link>
                     </div>
                     <div class="max-md:py-10 md:pb-14  border-b border-white max-lg:text-center">
                         <h1
