@@ -1,7 +1,7 @@
 <template>
 
     <section class="workWithUs  relative">
-        <div class="w-screen pl-8 2xl:pl-[calc((100%-1520px)/2)]">
+        <div class="w-screen pl-8 2xl:pl-[calc((100%-1410px)/2)]">
             <div class="relative">
                 <div class="absolute hidden 2xl:block -top-[48px] 2xl:-top-[63px] -left-8 2xl:-left-[63px] ">
                     <img src="~/assets/img/career/careersPattern.svg" alt="careersPattern">

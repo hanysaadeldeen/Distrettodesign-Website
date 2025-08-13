@@ -1,7 +1,7 @@
 <template>
     <!-- <section class="pl-8 sm:pl-14 md:pl-24 lg:pl-36 xl:pl-[200px] "> -->
     <section class="overflow-hidden">
-        <div class="w-screen pl-8 2xl:pl-[calc((100%-1520px)/2)]">
+        <div class="w-screen pl-8 2xl:pl-[calc((100%-1410px)/2)]">
 
 
             <div

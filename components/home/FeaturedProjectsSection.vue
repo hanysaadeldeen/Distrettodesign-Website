@@ -1,6 +1,6 @@
 <template>
     <section class="Featured-projects bg-SectionBG">
-        <div class="container mx-auto max-w-[1520px]  px-5 py-16 md:py-[120px]">
+        <div class="container mx-auto max-w-[1410px] max-xl:px-5 py-16 md:py-[120px]">
             <div class="flex justify-between items-center  max-sm:flex-col mb-14 gap-4">
 
                 <SectionTitle title="FEATURED PROJECTS" class="text-center uppercase" />

@@ -1,7 +1,7 @@
 <template>
     <header class="relative  max-2xl:px-6 py-4 md:py-6 text-black bg-white " :dir="locale === 'ar' ? 'rtl' : 'ltr'"
         :class="[{ 'overflow-hidden': isSideBar }]">
-        <div class="mx-auto max-w-[1510px] ">
+        <div class="mx-auto max-w-[1405px] ">
             <div class="relative z-40">
                 <div class="flex items-center justify-between ">
                     <nuxt-link :to="localePath('index')" class="block relative ">

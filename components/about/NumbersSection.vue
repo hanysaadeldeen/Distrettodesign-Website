@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container mx-auto max-w-[1520px] px-5 ">
+    <div class="container mx-auto max-w-[1410px] max-xl:px-5 ">
       <div
         class="p-8 md:p-10 xl:p-[60px] bg-SectionBG2 flex justify-between items-center gap-10 max-xl:flex-col  rounded-[40px]">
         <div class="">

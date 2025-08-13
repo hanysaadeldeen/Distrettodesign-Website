@@ -1,8 +1,8 @@
 <template>
     <section class="ProjectCTA overflow-hidden">
-        <div class="w-screen pr-8 2xl:pr-[calc((100%-1520px)/2)]">
+        <div class="w-screen pr-8 2xl:pr-[calc((100%-1410px)/2)]">
             <div
-                class="imgCta  rounded-r-[60px]  lg:rounded-r-[100px] pr-5 py-8 sm:pr-14 sm:py-14 md:pr-20 md:py-20 xl:py-32 px-5 2xl:px-[calc((100%-1520px))] relative">
+                class="imgCta  rounded-r-[60px]  lg:rounded-r-[100px] pr-5 py-8 sm:pr-14 sm:py-14 md:pr-20 md:py-20 xl:py-32max-xl:px-5 2xl:px-[calc((100%-1410px))] relative">
                 <div
                     class="absolute top-0 left-0  rounded-r-[60px]  lg:rounded-r-[100px] w-full h-full bg-[#000000] opacity-50 transition-all ease-in-out duration-500 z-10">
                 </div>

@@ -1,6 +1,6 @@
 <template>
   <main class="overflow-hidden">
-    <div class="container mx-auto max-w-[1520px] px-5">
+    <div class="container mx-auto max-w-[1410px] max-xl:px-5">
       <div class="mt-24 lg:my-40">
         <h1 class=" text-2xl sm:text-3xl md:text-4xl lg:text-[80px] lg:!leading-[80px] font-semibold text-center  ">
           Want to join us ?</h1>

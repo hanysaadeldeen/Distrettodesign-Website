@@ -1,6 +1,6 @@
 <template>
     <section class="ProjectCTA overflow-hidden">
-        <div class="w-screen pl-8 2xl:pl-[calc((100%-1520px)/2)]">
+        <div class="w-screen pl-8 2xl:pl-[calc((100%-1410px)/2)]">
             <div
                 class="imgCta  rounded-l-[60px]  lg:rounded-l-[100px] pr-5 pl-10 py-8 sm:pl-14 sm:py-14 md:pl-20 md:py-20 xl:py-32  xl:px-[132px] relative">
                 <div

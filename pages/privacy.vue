@@ -2,7 +2,7 @@
 
   <main class="privacy relative mt-16 md:mt-24">
 
-    <div class="relative  max-w-[1520px] mx-auto">
+    <div class="relative  max-w-[1410px] mx-auto">
       <div class="relative container max-sm:px-4 mx-auto px-2">
 
         <div class="terms-page flex" :key="locale">
@@ -31,7 +31,7 @@
               </div>
               <ul class="mt-[14px]">
                 <li v-for="(bullet, index) in section.content" :key="index"
-                  class="lista px-5   text-base md:text-lg  lg:text-2xl font-medium mb-1 relative text-titleHeaderSubtitle"
+                  class="listamax-xl:px-5   text-base md:text-lg  lg:text-2xl font-medium mb-1 relative text-titleHeaderSubtitle"
                   :class="locale === 'en' ? 'before:left-0' : 'before:right-0'">
                   {{ $t(bullet) }}
                 </li>

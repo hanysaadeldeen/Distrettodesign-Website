@@ -1,6 +1,6 @@
 <template>
   <div class="ProjectSection">
-    <div class="container mx-auto max-w-[1520px] px-5 mb-16 relative text-center">
+    <div class="container mx-auto max-w-[1410px] max-xl:px-5 mb-16 relative text-center">
       <div class="flex gap-6 max-md:flex-col">
         <div class="flex flex-col gap-6">
           <nuxt-link to="/projects/1">

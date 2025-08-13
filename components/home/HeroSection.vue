@@ -3,7 +3,7 @@
         <div class="flex justify-between flex-col h-full">
             <div class="max-w-[1688px] mx-auto  overflow-hidden w-full   h-full">
                 <h1
-                    class="text-4xl sm:text-5xl md:text-7xl px-5 lg:text-[80px] text-white pt-16 lg:pt-[110px] lg:!leading-[90px] font-semibold ">
+                    class="text-4xl sm:text-5xl md:text-7xlmax-xl:px-5 lg:text-[80px] text-white pt-16 lg:pt-[110px] lg:!leading-[90px] font-semibold ">
                     DISTRETTO <br> DESIGN</h1>
             </div>
             <div

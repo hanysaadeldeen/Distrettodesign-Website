@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container mx-auto max-w-[1520px]  px-5">
+        <div class="container mx-auto max-w-[1410px] max-xl:px-5">
             <div class=" mb-8 md:mb-14">
                 <SectionTitle title="OUR ROLES" class="uppercase" />
             </div>

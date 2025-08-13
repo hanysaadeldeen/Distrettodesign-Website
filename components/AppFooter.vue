@@ -1,7 +1,7 @@
 <template>
     <footer class="mt-6 relative bg-black rounded-tl-[80px] md:rounded-tl-[100px] text-white">
         <section class="relative mx-auto max-w-[1520px]">
-            <div class="container mx-auto  px-5 relative">
+            <div class="container mx-auto max-xl:px-5 relative">
                 <div class="absolute -top-6 right-0 hidden lg:block">
                     <img src="~/assets/img/Utils/footer.svg" alt="footer">
                 </div>
