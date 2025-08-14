@@ -1,6 +1,6 @@
 <template>
   <section class="relative ">
-    <div class="relative mx-auto max-w-[1410px] max-xl:px-5">
+    <div class="relative mx-auto max-w-[1328px] max-xl:px-5">
 
       <div class="md:hidden">
         <div class="mb-8 md:mb-14">
@@ -68,9 +68,9 @@ const projects = [
   },
   {
     number: "3.",
-    title: "INSTALLATION",
-    description: "Distretto Design arranges the transfer and installation of the products to your space, focusing on the details that will accentuate their excellence.",
-    src: INSTALLATION,
+    title: "HOME AUTOMATION",
+    description: "Distretto Design offers a fully integrated home automation system that allows seamless control of lighting, shading, music, climate, and security — all from a single platform, whether through touch panels, a mobile app, or smart scheduling — creating a comfortable, intelligent living experience tailored to every moment. ",
+    src: HOMEAUTOMATION,
   },
   {
     number: "4.",
@@ -80,9 +80,11 @@ const projects = [
   },
   {
     number: "5.",
-    title: "HOME AUTOMATION",
-    description: "Distretto Design offers a fully integrated home automation system that allows seamless control of lighting, shading, music, climate, and security — all from a single platform, whether through touch panels, a mobile app, or smart scheduling — creating a comfortable, intelligent living experience tailored to every moment. ",
-    src: HOMEAUTOMATION,
+
+
+    title: "INSTALLATION",
+    description: "Distretto Design arranges the transfer and installation of the products to your space, focusing on the details that will accentuate their excellence.",
+    src: INSTALLATION,
   },
 ]
 

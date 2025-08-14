@@ -1,12 +1,14 @@
 <template>
     <section class="Featured-projects bg-SectionBG">
-        <div class="container mx-auto max-w-[1410px] max-xl:px-5 py-16 md:py-[120px]">
+        <div class="container mx-auto max-w-[1328px] max-xl:px-5 py-16 md:py-[120px]">
             <div class="flex justify-between items-center  max-sm:flex-col mb-14 gap-4">
 
                 <SectionTitle title="FEATURED PROJECTS" class="text-center uppercase" />
-                <button class="gradient-button ">
-                    View All Projects
-                </button>
+                <nuxt-link to="/projects">
+                    <button class="gradient-button ">
+                        View All Projects
+                    </button>
+                </nuxt-link>
             </div>
             <div class="flex max-md:flex-col gap-4 md:gap-6">
                 <div class="w-full md:w-[55.94%]  flex flex-col gap-4 md:gap-6">

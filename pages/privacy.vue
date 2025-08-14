@@ -2,7 +2,7 @@
 
   <main class="privacy relative mt-16 md:mt-24">
 
-    <div class="relative  max-w-[1410px] mx-auto">
+    <div class="relative  max-w-[1328px] mx-auto">
       <div class="relative container max-sm:px-4 mx-auto px-2">
 
         <div class="terms-page flex" :key="locale">

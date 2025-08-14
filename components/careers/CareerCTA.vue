@@ -14,8 +14,10 @@
                         Be part of a passionate team shaping timeless spaces with vision, craftsmanship, and creativity.
                     </p>
                     <div class="flex gap-4 max-md:flex-col ">
-                        <button class="gradient-buttonTwo   mt-4 sm:mt-8 lg:mt-12">Contact Us</button>
-                        <a href="http://wa.me/+966559916060" target="_blank">
+                        <nuxt-link to="/contact">
+                            <button class="gradient-buttonTwo   mt-4 sm:mt-8 lg:mt-12">Contact Us</button>
+                        </nuxt-link>
+                        <a href="http://wa.me/+966126829184" target="_blank">
                             <button class="gradient-buttonTwo  w-full sm:mt-8 lg:mt-12">Send Your CV To WhatsApp
                             </button>
                         </a>

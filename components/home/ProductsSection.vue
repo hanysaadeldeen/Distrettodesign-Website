@@ -1,5 +1,5 @@
 <template>
-    <section class="ProductsSection mx-auto max-w-[1410px] max-xl:px-5">
+    <section class="ProductsSection mx-auto max-w-[1328px] max-xl:px-5">
         <div class="container mx-auto">
             <div class="flex justify-between items-cente gap-6 max-lg:flex-col">
                 <div class="w-full lg:max-w-[755px] max-lg:text-center">

@@ -3,29 +3,29 @@
     <div class="container mx-auto max-w-[1410px] max-xl:px-5 mb-16 relative text-center">
       <div class="flex gap-6 max-md:flex-col">
         <div class="flex flex-col gap-6">
-          <nuxt-link to="/projects/1">
+          <nuxt-link>
             <div class="group relative">
               <img src="~/assets/img/projects/one/Placeholder Image 1.svg" alt="">
               <div
                 class="absolute top-0 left-0 w-full h-full bg-[#000000] items-end p-12 opacity-0 group-hover:opacity-30 transition-all ease-in-out duration-500 flex rounded-[40px]">
               </div>
               <div
-                class="absolute top-0 left-0 w-full h-full  items-end p-2 md:p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
+                class="absolute top-0 left-0 w-full h-full  items-end p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
                 <h1 class="text-white text-base sm:text-xl md:text-2xl font-medium !opacity-100">
                   Mövenpick Hotel
                 </h1>
               </div>
             </div>
           </nuxt-link>
-          <nuxt-link to="/projects/2">
+          <nuxt-link>
             <div class="group relative">
               <div
                 class="absolute top-0 left-0 w-full h-full bg-[#000000] items-end p-12 opacity-0 group-hover:opacity-30 transition-all ease-in-out duration-500 flex rounded-[40px]">
               </div>
               <div
-                class="absolute top-0 left-0 w-full h-full  items-end p-2 md:p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
+                class="absolute top-0 left-0 w-full h-full  items-end p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
                 <h1 class="text-white text-base sm:text-xl md:text-2xl font-medium !opacity-100">
-                  Mövenpick Hotel
+                  King Fahd International Airport
                 </h1>
               </div>
               <img src="~/assets/img/projects/one/Placeholder Image 2.svg" alt="">
@@ -43,9 +43,9 @@
               class="absolute top-0 left-0 w-full h-full bg-[#000000] items-end p-12 opacity-0 group-hover:opacity-30 transition-all ease-in-out duration-500 flex rounded-[40px]">
             </div>
             <div
-              class="absolute top-0 left-0 w-full h-full  items-end p-2 md:p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
+              class="absolute top-0 left-0 w-full h-full  items-end p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
               <h1 class="text-white text-base sm:text-xl md:text-2xl font-medium !opacity-100">
-                Mövenpick Hotel
+                Haramain High Speed
               </h1>
             </div>
           </div>
@@ -58,9 +58,9 @@
               class="absolute top-0 left-0 w-full h-full bg-[#000000] items-end p-12 opacity-0 group-hover:opacity-30 transition-all ease-in-out duration-500 flex rounded-[40px]">
             </div>
             <div
-              class="absolute top-0 left-0 w-full h-full  items-end p-2 md:p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
+              class="absolute top-0 left-0 w-full h-full  items-end p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
               <h1 class="text-white text-base sm:text-xl md:text-2xl font-medium !opacity-100">
-                Mövenpick Hotel
+                Dallah Albaraka – Jeddah, Saudi Arabia
               </h1>
             </div>
             <img src="~/assets/img/projects/one/Placeholder Image 4.svg" alt="">
@@ -68,16 +68,16 @@
         </div>
       </div>
       <div class="flex gap-6 max-md:flex-col mt-6">
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-6 w-full md:w-1/2">
           <div class="group relative">
-            <img src="~/assets/img/projects/one/Placeholder Image 1.svg" alt="">
+            <img src="~/assets/img/projects/Haramain High/Haramain High Speed Railway.webp" alt="">
             <div
               class="absolute top-0 left-0 w-full h-full bg-[#000000] items-end p-12 opacity-0 group-hover:opacity-30 transition-all ease-in-out duration-500 flex rounded-[40px]">
             </div>
             <div
-              class="absolute top-0 left-0 w-full h-full  items-end p-2 md:p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
+              class="absolute top-0 left-0 w-full h-full  items-end p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
               <h1 class="text-white text-base sm:text-xl md:text-2xl font-medium !opacity-100">
-                Mövenpick Hotel
+                Haramain High Speed Railway
               </h1>
             </div>
           </div>
@@ -86,33 +86,33 @@
               class="absolute top-0 left-0 w-full h-full bg-[#000000] items-end p-12 opacity-0 group-hover:opacity-30 transition-all ease-in-out duration-500 flex rounded-[40px]">
             </div>
             <div
-              class="absolute top-0 left-0 w-full h-full  items-end p-2 md:p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
+              class="absolute top-0 left-0 w-full h-full  items-end p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
               <h1 class="text-white text-base sm:text-xl md:text-2xl font-medium !opacity-100">
-                Mövenpick Hotel
+                The new King Abdulaziz
+                International Airport
               </h1>
             </div>
-            <img src="~/assets/img/projects/one/Placeholder Image 2.svg" alt="">
+            <img src="~/assets/img/projects/King Abdulaziz International/ThenewKingAbdulazizInternationalAirport.webp"
+              alt="">
           </div>
         </div>
-        <div class="flex flex-col gap-6">
-
-
+        <div class="flex flex-col gap-6 w-full md:w-1/2">
           <div class="group relative">
 
 
-            <img src="~/assets/img/projects/one/Placeholder Image 3.svg" alt="">
+            <img src="~/assets/img/projects/King Abdulaziz International/ThenewKingAbdulazizInternationalAirport2.webp"
+              alt="">
             <div
               class="absolute top-0 left-0 w-full h-full bg-[#000000] items-end p-12 opacity-0 group-hover:opacity-30 transition-all ease-in-out duration-500 flex rounded-[40px]">
             </div>
             <div
-              class="absolute top-0 left-0 w-full h-full  items-end p-2 md:p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
+              class="absolute top-0 left-0 w-full h-full  items-end p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
               <h1 class="text-white text-base sm:text-xl md:text-2xl font-medium !opacity-100">
-                Mövenpick Hotel
+                The new King Abdulaziz
+                International Airport
               </h1>
             </div>
           </div>
-
-
           <div class="group relative">
 
 
@@ -120,12 +120,13 @@
               class="absolute top-0 left-0 w-full h-full bg-[#000000] items-end p-12 opacity-0 group-hover:opacity-30 transition-all ease-in-out duration-500 flex rounded-[40px]">
             </div>
             <div
-              class="absolute top-0 left-0 w-full h-full  items-end p-2 md:p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
+              class="absolute top-0 left-0 w-full h-full  items-end p-4 lg:p-7 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 flex">
               <h1 class="text-white text-base sm:text-xl md:text-2xl font-medium !opacity-100">
-                Mövenpick Hotel
+                King Fahd International Airport
+
               </h1>
             </div>
-            <img src="~/assets/img/projects/one/Placeholder Image 4.svg" alt="">
+            <img src="~/assets/img/projects/King Fahd/King Fahd International Airport.webp" alt="">
           </div>
         </div>
       </div>
@@ -143,6 +144,10 @@
 </script>
 
 <style scoped>
+img {
+  border-radius: 40px;
+}
+
 .group {
   cursor: pointer;
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="ProjectFilter container mx-auto max-w-[1410px] max-xl:px-5 mb-16 relative mt-24 lg:mt-40">
+    <div class="ProjectFilter container mx-auto max-w-[1328px] max-xl:px-5 mb-16 relative mt-24 lg:mt-40">
         <Swiper slidesPerView="auto" :spaceBetween="15" :breakpoints="{
 
             640: {

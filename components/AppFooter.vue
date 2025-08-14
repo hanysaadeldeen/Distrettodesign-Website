@@ -1,6 +1,6 @@
 <template>
     <footer class="mt-6 relative bg-black rounded-tl-[80px] md:rounded-tl-[100px] text-white">
-        <section class="relative mx-auto max-w-[1520px]">
+        <section class="relative mx-auto max-w-[1328px]">
             <div class="container mx-auto max-xl:px-5 relative">
                 <div class="absolute -top-6 right-0 hidden lg:block">
                     <nuxt-link :to="localePath('index')" class="cursor-pointer">
@@ -19,7 +19,9 @@
                         <h1
                             class="max-lg:text-center text-2xl sm:text-3xl md:text-4xl lg:text-[52px] lg:!leading-[52px] font-medium mb-4 md:mb-6  lg:max-w-[529px]">
                             SHAPING VISION INTO SPACES</h1>
-                        <button class="gradient-button  mt-6 ">Get Our Service</button>
+                        <nuxt-link to="/contact">
+                            <button class="gradient-button  mt-6 ">Get Our Service</button>
+                        </nuxt-link>
                         <div class="mt-6 ">
                             <nav>
                                 <ul
@@ -78,10 +80,7 @@
                     </div>
                     <div
                         class="max-lg:pb-8 pt-8 flex max-lg:flex-col max-lg:justify-center gap-2 justify-between items-center text-white text-sm ">
-
                         <ul class="flex gap-6 items-center *:underline *:cursor-pointer ">
-
-
                             <li :class="adjustedPath === '/privacy' ? 'active' : ''">
                                 <nuxt-link :to="localePath('privacy')">
                                     Privacy Policy
@@ -92,9 +91,7 @@
                                     Terms of Service
                                 </nuxt-link>
                             </li>
-
                         </ul>
-
                         <p class="text-center">© 2025 Distretto Design. All rights reserved. Made by
                             <a href="https://do.com.sa/" class=" font-bold text-lg mx-1 underline"
                                 target="_blank">DO</a>.

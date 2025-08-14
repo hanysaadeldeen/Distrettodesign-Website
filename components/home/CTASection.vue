@@ -16,7 +16,10 @@
                         in
                         creating environments that leave a legacy.
                     </p>
-                    <button class="gradient-buttonTwo   mt-4 sm:mt-8 lg:mt-12">Start Your project</button>
+                    <nuxt-link to="/contact">
+
+                        <button class="gradient-buttonTwo   mt-4 sm:mt-8 lg:mt-12">Start Your project</button>
+                    </nuxt-link>
                 </div>
             </div>
         </div>

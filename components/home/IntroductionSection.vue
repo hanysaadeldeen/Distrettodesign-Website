@@ -1,5 +1,5 @@
 <template>
-    <section class="Introduction max-w-[1410px] mx-auto max-xl:px-5 overflow-hidden">
+    <section class="Introduction max-w-[1328px] mx-auto max-xl:px-5 overflow-hidden">
         <div class="">
             <div class="w-full flex max-lg:flex-col-reverse justify-between items-center gap-20">
                 <div class="relative">
@@ -38,9 +38,12 @@
                         —
                         <span class="font-medium">it’s felt</span> -->
                     </h3>
-                    <button class="gradient-button mt-6 ">
-                        Know More About Us
-                    </button>
+                    <nuxt-link to="/about">
+
+                        <button class="gradient-button mt-6 ">
+                            Know More About Us
+                        </button>
+                    </nuxt-link>
                 </div>
 
             </div>
